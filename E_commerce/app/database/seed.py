@@ -1,5 +1,7 @@
 import logging
 
+import app.models  # noqa: F401 — registers all models in SQLAlchemy mapper
+
 from sqlalchemy.orm import Session
 
 from app.database.session import SessionLocal
